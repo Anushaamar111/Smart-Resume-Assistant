@@ -1,3 +1,9 @@
+import asyncio
+try:
+    asyncio.get_running_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
+
 import os
 import streamlit as st
 from tempfile import NamedTemporaryFile
@@ -9,6 +15,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
+from langchain_community.llms import HuggingFaceHub
 
 # Load .env variables
 load_dotenv()
