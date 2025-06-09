@@ -10,3 +10,4 @@ faiss-cpu
 langchain_groq
 langchain_huggingface
 pypdf
+sqlite3
