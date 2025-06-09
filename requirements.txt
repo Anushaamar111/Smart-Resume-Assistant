@@ -8,3 +8,4 @@ python-dotenv
 tiktoken
 faiss-cpu
 openai
+langchain_huggingface
