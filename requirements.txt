@@ -7,3 +7,5 @@ sentence-transformers
 chromadb>=0.4.0
 torch
 PyPDF2
+protobuf<4.25  # Fixes compatibility with opentelemetry and chromadb
+opentelemetry-exporter-otlp<1.23  # Ensure OTLP exporter works with protobuf
