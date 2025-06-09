@@ -5,7 +5,10 @@ langchain-community
 huggingface_hub
 sentence-transformers
 chromadb>=0.4.0
-torch
+torch==2.2.2
 PyPDF2
-protobuf<4.25  # Fixes compatibility with opentelemetry and chromadb
-opentelemetry-exporter-otlp<1.23  # Ensure OTLP exporter works with protobuf
+protobuf==5.26.1
+opentelemetry-api==1.24.0
+opentelemetry-sdk==1.24.0
+opentelemetry-exporter-otlp==1.24.0
+opentelemetry-proto==1.24.0
