@@ -9,3 +9,5 @@ huggingface-hub
 pypdf
 tiktoken
 sentence-transformers
+protobuf==3.20.3
+
