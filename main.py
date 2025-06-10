@@ -5,6 +5,7 @@ except RuntimeError:
     asyncio.set_event_loop(asyncio.new_event_loop())
 
 import os
+os.environ["STREAMLIT_WATCHED_MODULES"] = "False"
 import streamlit as st
 from tempfile import NamedTemporaryFile
 from dotenv import load_dotenv
