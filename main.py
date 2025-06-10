@@ -4,6 +4,9 @@ try:
 except RuntimeError:
     asyncio.set_event_loop(asyncio.new_event_loop())
 
+import sys
+import pysqlite3
+sys.modules["sqlite3"] = pysqlite3
 import os
 os.environ["STREAMLIT_WATCHED_MODULES"] = "False"
 import streamlit as st
